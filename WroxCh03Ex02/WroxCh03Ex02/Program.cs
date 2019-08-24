@@ -1,4 +1,4 @@
-﻿usingusing System;
+﻿using System;
 
 namespace ConsoleApp3
 {
