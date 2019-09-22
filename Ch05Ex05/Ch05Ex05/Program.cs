@@ -36,30 +36,37 @@ namespace Ch05Ex05
             int sum = 0, total = 0, counter = 0, intValue = 0;
             int?[] myIntArry = new int?[7] { 5, intValue, 9, 10, null, 2, 99 };
             foreach (var integer in myIntArry)
-                {
+            {
 
                 switch (integer)
                 {
                     case 0:
                         WriteLine($"Integer number '{total}' has a default value of 0");
+                        total++;
                         counter++;
                         break;
                     case int value:
                         sum += value;
+                        WriteLine($"Integer number '{total}' has a value of {value}");
+                        total++;
+                        counter++;
                         break;
                     case null:
                         WriteLine($"Integer number '{total}' is null");
-                        counter++;
+                        total++;
                         break;
                     default:
                         break;
-                    
+
                 }
 
+                
+                
             }
 
-            WriteLine($" {total} total integers, {counter} integers with a" +
-                $"value other than 0 or null have a sum value of {sum}");
+            WriteLine($" {total} total integers, {counter} integers with a " +
+                    $"value other than 0 or null have a sum value of {sum}");               
+
             ReadLine();
         }
     }
